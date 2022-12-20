@@ -3,7 +3,7 @@
 Network traffic anomaly detection (intrusion detection task)
 ------------
 
-**Theory and Methods**
+### Theory and Methods
 The data that we are going to use for this is a subset of an open source default of Intrusion detection evaluation dataset (ISCXIDS2012) from the the Canadian Institute for Cybersecurity repository: https://www.unb.ca/cic/datasets/ids.html. In order to download this dataset, you have to pass a short registration.
 
 The intend for this dataset is to assist various researchers in acquiring datasets of this kind for testing, evaluation, and comparison purposes, through sharing the generated datasets and profiles. The full research paper outlining the details of the dataset and its underlying principles. Please include this citation if you plan to use this database:
