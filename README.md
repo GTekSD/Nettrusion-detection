@@ -22,16 +22,16 @@ In addition, we will build the visualization of our results, exactly the obtaine
 ### Import required libraries and dataset
 Alternative URL for downloading of the dataset.
 
-<sub>!wget https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/Advanced_ML_anomaly_detection_L3/DataSets.zip</sub>
+```!wget https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/Advanced_ML_anomaly_detection_L3/DataSets.zip```
 
 Import the necessary libraries to use in this lab. We can add some aliases (such as pd, plt, np, tf) to make the libraries easier to use in our code and set a default figure size for further plots. Ignore the warnings.
 
-<sub>
+```
 !pip install gensim
 !pip install python-Levenshtein
 !pip install tensorflow==2.4
-</sub>
-<sub>
+```
+```
 import numpy as np
 import pandas as pd
 import tensorflow as tf
@@ -57,4 +57,4 @@ seed = 42
 ​
 import warnings
 warnings.filterwarnings(action = "ignore")
-</sub>
+```
