@@ -17,3 +17,44 @@ Moreover, you will be provided 12 files of data. You should select one among the
 Anomaly detection has three broad categories based on anomaly detection techniques: unsupervised, supervised and semi-supervised anomaly detection.
 
 In addition, we will build the visualization of our results, exactly the obtained metrics (accuracy and loss) to choose the best model for further saving and predicting based on this saved model.
+
+
+### Import required libraries and dataset
+Alternative URL for downloading of the dataset.
+
+<sub>!wget https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/Advanced_ML_anomaly_detection_L3/DataSets.zip</sub>
+
+Import the necessary libraries to use in this lab. We can add some aliases (such as pd, plt, np, tf) to make the libraries easier to use in our code and set a default figure size for further plots. Ignore the warnings.
+
+<sub>
+!pip install gensim
+!pip install python-Levenshtein
+!pip install tensorflow==2.4
+</sub>
+<sub>
+import numpy as np
+import pandas as pd
+import tensorflow as tf
+import matplotlib.pyplot as plt
+import xml.etree.ElementTree as ElTree
+import re, h5py, itertools, math, glob, zipfile, os
+from sklearn.preprocessing import LabelEncoder, OneHotEncoder
+from sklearn.metrics import log_loss, auc, roc_curve
+from tensorflow.keras import layers
+from keras.layers.core import Masking
+from tensorflow.keras.layers import Dense, LSTM, Dropout, Embedding, TimeDistributed
+from keras.layers.wrappers import Bidirectional
+from tensorflow.keras.models import Model, Sequential, load_model
+from keras.utils import np_utils
+from tensorflow.python.client import device_lib
+from lxml import etree
+from gensim.models import Word2Vec
+​
+# %matplotlib inline
+plt.rcParams['figure.figsize'] = (15, 5)
+plt.style.use('ggplot')
+seed = 42
+​
+import warnings
+warnings.filterwarnings(action = "ignore")
+</sub>
